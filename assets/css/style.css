@@ -1,0 +1,220 @@
+
+@font-face {
+  font-family: 'bitcell';
+  src: url('../fonts/bitcell.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+html body{
+  background-color: #81f4ff;
+
+}
+
+span#hueco-pista {
+  font-family: 'bitcell';
+  font-size: 25px;
+}
+
+img.logo-principal{
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+.main-container {
+  max-width: 800px;
+  margin: auto;
+}
+h1.titulo {
+  margin: 50px auto 80px auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+h1#msg-final {
+  text-align: center;
+  color: crimson;
+  transition: all .5s ease;
+  transform: scale(0);
+  min-height: 50px;
+  margin-bottom: 0;
+}
+.zoom-in {
+  transform: scale(1) !important;
+}
+#acierto {
+  text-align: center;
+  min-height: 24px;
+  transform: scale(0);
+  margin-left: 600px;
+}
+
+
+
+.acierto {
+  animation: zoomInOut 1s ease;
+}
+.rojo {
+  color: red;
+}
+.verde {
+  color: green;
+}
+@keyframes zoomInOut {
+  0% { transform: scale(0); }
+  50% { transform: scale(1); }
+  70% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+h2#palabra {
+  background-color: #ff4242;
+  padding: 10px 20px 10px 20px;
+  border: solid 5px #ffe350;
+  border-radius: 5px;
+  width: 500px;
+  max-width: 500px;
+  min-width: 500px;
+  display: block;
+  letter-spacing: 12px;
+  color: #ffffff;
+  font-family: bitcell;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 4px;
+}
+.flex-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px auto; 
+}
+.no-wrap {
+  flex-wrap: nowrap !important;
+}
+.col {
+  width: 100%;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.col span {
+  
+}
+#turnos h3 {
+  margin: auto;
+  font-family: 'bitcell';
+  font-size: 50px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+h3 span {
+   color: orangered;
+}
+.letra:disabled {
+  color:rgba(255, 0, 0, 0.5);
+}
+picture {
+  position: relative;
+  display: flex;
+  margin-inline-start: auto;
+  margin-left: auto;
+  margin-right: 300px;
+}
+picture img {
+  position: absolute;
+  top: -203px;
+  left: -205px;
+  height: 225px;
+}
+#image5, #image4, #image3,
+#image2, #image1, #image0 {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.fade-in {
+  opacity: 1 !important;
+}
+.encuadre {
+  border: 2px dashed crimson;
+  padding: 3px 2px 2px 6px;
+}
+
+.acierto {
+  text-align: center;
+  min-height: 24px;
+  letter-spacing: 5px;
+  font-family: 'bitcell';
+  transform: scale(0);
+}
+
+.rojo {
+  color: #ff4242;
+}
+
+.verde {
+  color: #ffe350;
+}
+
+button#A, #B, #C, #D, #E, #F, #G, #H, #I, #J, #K, #L, #M, #N, #Ñ, #O, #P, #Q, #R, #S, #T, #U, #V, #W, #X, #Y, #Z {
+  padding: 5px 10px 5px 10px;
+  font-size: 30px;
+  background-color: #282828;
+  color: white;
+  font-weight: bold;
+  border: #ffffff solid 2px;
+  font-family: bitcell;
+  border-radius: 5px;
+  margin: 3px;
+  font-weight: 100;
+  transition: all 0.3s;
+}
+
+button#A:hover, #B:hover, #C:hover, #D:hover, #E:hover, #F:hover, #G:hover, #H:hover, #I:hover, #J:hover, #K:hover, #L:hover, #M:hover, #N:hover, #Ñ:hover, #O:hover, #P:hover, #Q:hover, #R:hover, #S:hover, #T:hover, #U:hover, #V:hover, #W:hover, #X:hover, #Y:hover, #Z:hover {
+  background-color: white;
+  color: #ff4242;
+  transition: all 0.3s;
+}
+
+button.modern {
+  box-sizing: border-box;
+  display: block;
+  width: 49%;
+  font-size: 15px;
+  line-height: 1.47059;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background: #ffe350;
+  backdrop-filter: blur(5px);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0 0 0);
+  cursor: pointer;
+  display: inline-block;
+  min-width: 30px;
+  padding: 10px 15px;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 1;
+  margin-bottom: 10px;
+}
+
+button.modern.red{
+  background: #ff5151;
+  transition: all 0.3s;
+}
+
+button.modern:hover{
+  background: #bea93c;
+  transition: all 0.3s;
+}
+
+button.modern:hover{
+  background: #bea93c;
+  transition: 0.3s all;
+}
